@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 const PartnerDashboard = () => {
     const [partners, setPartners] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const [partnersPerPage] = useState(8);
+    const [partnersPerPage] = useState(9);
     const [showModal, setShowModal] = useState(false);
     const [selectedPartner, setSelectedPartner] = useState(null);
     const [filters, setFilters] = useState({ date: '', package: '', shopName: '' });
@@ -113,7 +113,7 @@ const PartnerDashboard = () => {
             </form>
 
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
                 {currentPartners.reverse().map(partner => (
                     <div key={partner._id} className="bg-white relative rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105">
                         <h2 className="text-xl font-semibold text-gray-800">{partner.ShopName}</h2>
