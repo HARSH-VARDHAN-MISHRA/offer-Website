@@ -1,5 +1,4 @@
-import React from 'react';
-import advsImage from './adv-us.avif';
+import React from 'react'
 
 const Advertise = () => {
   return (
